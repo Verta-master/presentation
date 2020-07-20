@@ -1,3 +1,16 @@
+@media (max-width: 1900px) {
+  .screen__justify {
+    max-width: 50%;
+    text-align: left;
+  }
+  .screen__pic {
+    position: static;
+    width: 50%;
+    float: right;
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 1600px) {
   .logo {
     width: 500px;
@@ -28,6 +41,9 @@
   }
   .screen__right {
     max-width: 50%;
+  }
+  .screen__justify {
+    font-size: 30px;
   }
 }
 
@@ -74,6 +90,20 @@
   .screen__videobox {
     padding: 30px;
   }
+  .screen__pic {
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    max-width: 100%;
+  }
+  .screen__justify {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  .screen__promo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 766px) {
@@ -81,6 +111,7 @@
     font-size: 20px;
   }
   .title, h1 {
+    margin-top: 100px;
     font-size: 24px;
   }
   .logo {
@@ -103,5 +134,9 @@
   .title-2, h2 {
     max-width: 100%;
     font-size: 24px;
+  }
+  .screen__justify {
+    font-size: 20px;
+    letter-spacing: normal;
   }
 }

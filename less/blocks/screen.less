@@ -24,12 +24,12 @@
     .reset();
     list-style: none;
     max-width: 100%;
-    margin-bottom: 110px;
     margin-top: 25px;
     
     li {
       position: relative;
       padding-left: 25px;
+      margin-bottom: 30px;
       
       &::before {
         content: "";
@@ -71,8 +71,7 @@
 }
 
 .screen__text {
-  width: 75%;
-  letter-spacing: -0.075em;
+  width: 65%;
 }
 
 .screen__info {
@@ -132,4 +131,19 @@
 
 .screen__mt {
   margin-top: 160px;
+}
+
+.screen__justify {
+  text-align: justify;
+  max-width: 974px;
+  margin-top: 120px;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+}
+
+.screen__pic {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
