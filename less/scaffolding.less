@@ -9,6 +9,39 @@ body {
   min-height: 100vh;
 }
 
+main {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 238px;
+    background-image: url(../img/images/bg-left.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 238px 100%;
+  }
+}
+
+.logo-bottom {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  left: 15px;
+  width: 138px;
+  height: auto;
+  .transition();
+  
+  &--hide {
+    opacity: 0;
+    .transition();
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
